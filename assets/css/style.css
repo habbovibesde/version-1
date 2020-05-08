@@ -1,0 +1,296 @@
+/*!
+ * HabboVibes.de - Wir lieben gute Musik!
+ *
+ * @author   Gummiauge & efi.styler
+ * @version  1.0.0
+ */
+
+body {
+  background-color: #696969;
+  background-attachment: fixed;
+  background-image: url('../images/background.png');
+  background-repeat: repeat-x;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #2e3f49;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  width: 977px;
+  margin: 60px auto;
+}
+
+/* ======================== Clouds ======================== */
+
+#clouds {
+  position: absolute;
+  background: url('../images/clouds.png');
+  width: 100%;
+  height: 264px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 916px 0;
+  }
+}
+
+/* ======================== Header ======================== */
+
+#header {
+  background-image: url('../images/header_hotel.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 296px;
+  margin-right: 92px;
+}
+
+#header > a > #logo {
+  position: absolute;
+  background: url('../images/logo.png');
+  width: 247px;
+  height: 73px;
+  margin-top: 256px;
+  margin-left: -30px;
+}
+
+#header > #usercenter {
+  position: absolute;
+  border-radius: 100%;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  color: #ffffff;
+  width: 155px;
+  margin-top: 85px;
+  margin-left: 530px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+#header > #usercenter a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#header > #usercenter a:hover {
+  font-weight: bold;
+}
+
+#header > #navigation {
+  position: absolute;
+  top: 269px;
+  right: 100px;
+}
+
+#header > #navigation > ul {
+  margin: 0;
+}
+
+#header > #navigation > ul > li {
+  float: left;
+  list-style: none;
+  margin-left: -1px;
+}
+
+#header > #navigation > ul > li > .submenu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 0 2px rgba(0, 0, 0, .05);
+  min-width: 120px;
+  margin-top: -2px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+#header > #navigation > ul > li:hover > .submenu {
+  display: block;
+}
+
+#header > #navigation > ul > li > .submenu > a {
+  display: block;
+  color: #000000;
+  padding: 6px;
+}
+
+#header > #navigation > ul > li > .submenu > a:hover {
+  background-color: #eaeaea;
+}
+
+#header > #navigation > a:hover {
+  opacity: 0.8;
+}
+
+/* ======================== Content Box ======================== */
+
+#content_box {
+  background-color: #ffffff;
+  border: 1px solid #585858;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #ffffff, 0 2px 0 1px rgba(0,0,0,.2);
+  overflow: auto;
+}
+
+#content_box > #header_box {
+  background-color: #eaeaea;
+  background-image: url('../images/header_bg.png');
+  height: 217px;
+}
+
+#content_box > #header_box > #radiostatus {
+  position: absolute;
+  background-image: url('../images/header/equalizer.png'), url('../images/header/skyline.png');
+  background-position: left 15px, 18px 6px;
+  background-repeat: no-repeat;
+  width: 460px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#content_box > #header_box > #radiostatus > #programm {
+  position: absolute;
+  background-color: rgba(54, 54, 54, .3);
+  border-radius: 8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  color: #ffffff;
+  width: 270px;
+  margin-top: 10px;
+  padding: 10px 10px 0;
+}
+
+#content_box > #header_box > #radiostatus > #programm > .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#content_box > #header_box > #radiostatus > #programm > .subtitle {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#content_box > #header_box > #radiostatus > #habbo {
+  float: right;
+  background-position: 95px 29px, 180px -45px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 120px;
+  margin-top: 20px;
+  margin-right: -20px;
+}
+
+#content_box > #header_box > #radiostatus > #deejay_says {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+  color: #1994BD;
+  width: 100%;
+  margin-top: 120px;
+  padding: 5px;
+}
+
+#content_box > #header_box > #radiostatus > #deejay_says > span > marquee {
+  float: right;
+  width: 400px;
+}
+
+#content_box > #header_box > #topnews {
+  position: absolute;
+  background-color: #eaeaea;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, .1);
+  width: 410px;
+  right: 30px;
+  margin-top: 50px;
+  padding: 5px 5px 3px;
+  visibility: hidden;
+}
+
+#content_box > #header_box > #topnews .slide {
+  position: relative;
+  background-position: right bottom;
+  border-bottom: 3px solid #d8d8d8;
+  border-radius: 5px 5px 0 0;
+  height: 156px;
+}
+
+#content_box > #header_box > #topnews .slide > .meta {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .6);
+  color: #ffffff;
+  width: 376px;
+  bottom: 5px;
+  left: 5px;
+  padding: 7px;
+}
+
+#content_box > #news_box {
+  background-color: #eaeaea;
+  padding: 20px;
+}
+
+#content_box > #news_box > .wrapper {
+  display: grid;
+  grid-template-columns: 297px 297px 297px;
+  grid-gap: 20px;
+}
+
+#content_box > #news_box > .wrapper > .box {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, .1);
+  padding: 5px;
+}
+
+#content_box > #content {
+  padding: 30px 20px;
+  overflow: auto;
+}
+
+#content_box > #content > #content_left {
+  float: left;
+  width: 280px;
+}
+
+#content_box > #content > #content_right {
+  float: right;
+  width: 600px;
+}
+
+#content_box > #content .box {
+  background-color: #ffffff;
+  border: 2px solid #ebebeb;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px #3EADC5;
+  word-break: break-word;
+  color: #3EADC5;
+  padding: 10px;
+}
+
+#content_box > #footer {
+  background-image: url('../images/footer.png');
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  color: #ffffff;
+  height: 64px;
+}
+
+#content_box > #footer > p {
+  margin: 0;
+  padding-top: 10px;
+}
